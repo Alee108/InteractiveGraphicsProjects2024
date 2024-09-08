@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>8Pool</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <canvas id="indicatorCanvas"></canvas>
+    <div id="info-box">
+      <p>Pocketed Balls: <span id="balls-potted">0</span></p>
+      <p>Moves: <span id="moves-made">0</span></p>
+  </div>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+  <div id="my8pool">MY 8POOL</div>
+  <div id="win-message" style="display: none;">
+    <h1>You won! All the balls have been pocketed!</h1>
+</div>
+    <div id="light-controls">
+      <label>X: <input type="range" id="light-x" min="-20" max="20" step="1" value="10"></label>
+      <label>Y: <input type="range" id="light-y" min="0" max="40" step="1" value="20"></label>
+      <label>Z: <input type="range" id="light-z" min="-20" max="20" step="1" value="10"></label>
+  </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
